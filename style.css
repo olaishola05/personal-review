@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3cbc8d;
+  color: white;
+}
+
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3cbc8d;
+  color: white;
+}
+
+/* radio */
+
+input[type="radio"] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label::before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="checkbox"] + label::before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="radio"] + label:active::before {
+  transform: scale(0);
+}
+
+input[type="radio"]:checked + label::before {
+  background-color: mediumseagreen;
+  border-color: mediumseagreen;
+  color: #fff;
+}
+
+input[type="checkbox"] + label:active::before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: mediumseagreen;
+  border-color: mediumseagreen;
+  color: #fff;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type="radio"]:disabled + label::before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type="radio"]:checked:disabled + label::before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+.textarea #box {
+  width: 450px;
+  height: 300px;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
