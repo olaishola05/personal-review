@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Complete Below form</h1>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          error!
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <label id="name-label">Fullname: </label><br />
+        <input type="text" id="name" placeholder="enter fullname" required />
+        <br />
+        <label id="email-label">Email:</label><br />
+        <input type="email" id="email" placeholder="enter email" required />
+        <br />
+
+        <label id="number-label">Number: </label><br />
+        <input
+          type="number"
+          id="number"
+          placeholder="enter any number"
+          min="0"
+          max="100"
+          required
+        />
+
+        <br /><label>Select continent: </label><br />
+        <select name="name" id="dropdown">
+          <option value="Europe">Europe</option>
+          <option value="Africa">Africa</option>
+          <option value="Antarctica">Antarctica</option>
+          <option value="Asia">Asia</option>
+          <option value="North/South America">America</option>
+          <option value="Europe">Europe</option>
+        </select>
+
+        <br />
+        <p>Your gender:</p>
+        <input
+          class="container, male"
+          type="checkbox"
+          name="male"
+          value="Male"
+        />
+        <label> Male</label><br />
+        <input type="checkbox" class="male" name="female" value="Female" />
+        <label> Female</label><br />
+        <input type="checkbox" class="male" name="other" value="Other" />
+        <label> Other</label><br />
+        <p>Your age:</p>
+        <input type="radio" id="age1" name="age" value="10" />
+        <label>0 - 10</label><br />
+        <input type="radio" id="age2" name="age" value="20" />
+        <label>10 - 20</label><br />
+        <input type="radio" id="age3" name="age" value="30" />
+        <label>20 - 30</label><br />
+        <input type="radio" id="age4" name="age" value="40" />
+        <label>30 - 40</label><br />
+        <input type="radio" id="age5" name="age" value="50" />
+        <label>40 - 50</label><br />
+        <input type="radio" id="age6" name="age" value="60" />
+        <label>50+</label><br />
+
+        <div class="textarea">
+          <label> Additional comments</label><br />
+          <textarea
+            name="textarea"
+            id="box"
+            placeholder="Insert your comments here"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
